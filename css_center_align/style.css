@@ -1,0 +1,23 @@
+body{margin:0;}
+.dot-wrapper{
+    /* display:inline-block으로 text취급되기 때문에 아래 속성이 적용됨 */
+    text-align:center;
+    padding:50px 0;
+    background-color:#ddd;
+}
+.dot{
+    width:100px;
+    height:100px;
+    /* text한정으로 가운데 정렬을 할 수 있음 */
+    line-height:100px;    
+    background-color: orangered;
+    color:white;
+    font-size:3rem;
+    /* .dot자체가 center가 되는 것이 아니라, 그 안에 inline요소가 가운데 정렬이 됨 */
+    text-align:center; 
+    /* inline속성(text화)되므로 가로로 */
+    display:inline-block;
+    border-radius: 50%;
+    /* html에서 enter로 인해서 생기는 공간을 없에기 위한 css태그  */
+    /* margin:0 -3px; */
+}
